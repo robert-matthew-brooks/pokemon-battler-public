@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    font-family: 'courier', monospace;
+    font-size: 1.2em;
+    background-color: lightblue;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.flipped {
+    transform: scaleX(-1);
+}
+
+.outer-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-wrapper {
+    height: 90%;
+    aspect-ratio: 1.5;
+
+    min-width: 600px;
+    min-height: 400px;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr auto auto auto;
+    gap: 0.3em;
+}
+
+.inner-wrapper > * {
+    border: 3px solid black;
+    border-radius: 0.7em;
+
+    background-color: antiquewhite;
+}
+
+.image-area {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+
+
+/* Upper areas */
+
+
+
+.catch-pokemon {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  min-content auto auto;
+    justify-content: center;
+    justify-items: center;
+    gap: 1em;
+}
+
+.catch-pokemon > h2 {
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+.catch-pokemon > div {
+    aspect-ratio: 1;
+    max-height: 100%;
+    max-width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+}
+
+.catch-pokemon div:hover {
+    opacity: 0.8;
+}
+
+.big-message {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.battle-pokemon {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  min-content 1fr min-content;
+
+    justify-items: center;
+    gap: 1em;
+}
+
+.battle-pokemon > div {
+    position: relative;
+    aspect-ratio: 1;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dangerText {
+    color: red;
+    animation: danger-text 1s linear infinite;
+}
+
+.big-message > h1 {
+    font-size: 3em;
+}
+
+.choose-pokemon {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  min-content auto auto;
+    justify-content: center;
+    justify-items: center;
+    gap: 1em;
+}
+
+.choose-pokemon > h2 {
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+.choose-pokemon > div {
+    aspect-ratio: 1;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+}
+
+.choose-pokemon div:hover {
+    opacity: 0.8;
+}
+
+
+
+/* Lower areas */
+
+
+
+.report-area {
+    grid-column: 1;
+    grid-row: 2 / span 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0.5em;
+}
+
+.report-area input {
+    font-family: 'courier', monospace;
+    color: darkred;
+    font-size: 1.3em;
+    border: none;
+    background: transparent;
+}
+
+.report-area textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
+
+    resize: none;
+    overflow-y: scroll;
+    border: none;
+    background: transparent;
+}
+
+textarea:last-line {
+    font-weight: bold;
+}
+
+button {
+    min-width: 6em;
+    font-family: 'courier', monospace;
+    font-size: 1.3em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+
+    cursor: pointer;
+}
+
+button:hover:enabled {
+    background-color: red;
+}

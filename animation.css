@@ -1,0 +1,88 @@
+@keyframes danger-text {
+    0%   {
+        opacity: 1;
+    }
+    15% {
+        opacity: 0.3;
+    }
+    30% {
+      opacity: 1;
+    }
+}
+
+.spin-animation {
+    animation-name: spin-animation;
+    animation-duration: 0.7s;
+    transition: ease-out;
+}
+
+@keyframes spin-animation {
+    from {
+        scale: 0;
+        rotate: -720deg;
+    }
+    to {
+        scale: 1;
+        rotate: 720deg;
+    }
+}
+
+.player-attack-animation {
+    animation-name: player-attack-animation;
+    animation-duration: 1s;
+    transition: ease-out;
+}
+
+@keyframes player-attack-animation {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 50%;
+    }
+    30% {
+        left: 50%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.enemy-attack-animation {
+    animation-name: enemy-attack-animation;
+    animation-duration: 1s;
+    transition: ease-out;
+}
+
+@keyframes enemy-attack-animation {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: -50%;
+    }
+    30% {
+        left: -50%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.fade-out {
+    animation-name: fade-out;
+    animation-duration: 3s;
+    transition: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+        scale: 1;
+    }
+    100% {
+        opacity: 0;
+        scale: 0.5;
+    }
+}

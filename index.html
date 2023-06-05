@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pokemon Battler</title>
+        <script src="pokemon-battler.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="animation.css">
+    </head>
+    <body>
+        <div class="outer-wrapper">
+            <div class="inner-wrapper">
+
+                <div class="image-area bordered-area">
+                    <div id="catch-pokemon" class="catch-pokemon">
+                        <h2>Catch Pokemon:</h2>
+
+                        <div style="background-image: url('img/eevee.png')" onClick="selectPokemon('Eevee')" class="flipped"></div>
+                        <div style="background-image: url('img/charmander.png')" onClick="selectPokemon('Charmander')" class="flipped"></div>
+                        <div style="background-image: url('img/squirtle.png')" onClick="selectPokemon('Squirtle')"></div>
+                        <div style="background-image: url('img/vaporeon.png')" onClick="selectPokemon('Vaporeon')"></div>
+
+                        <div style="background-image: url('img/flareon.png')" onClick="selectPokemon('Flareon')" class="flipped"></div>
+                        <div style="background-image: url('img/bulbasaur.png')" onClick="selectPokemon('Bulbasaur')" class="flipped"></div>
+                        <div style="background-image: url('img/rattata.png')" onClick="selectPokemon('Rattata')"></div>
+                        <div style="background-image: url('img/leafeon.png')" onClick="selectPokemon('Leafon')"></div>
+
+
+                    </div>
+
+                    <div id="big-message" class="big-message hidden">
+                        <h2 id="big-title">Title</h2>
+                        <h3 id="big-subtext">Sub text</h3>
+                    </div>
+
+                    <div id="battle-pokemon" class="battle-pokemon hidden">
+
+                        <h2>Player:</h2>
+                        <h2 id="opponent-name">Opponent:</h2>
+
+                        <div id="player-img" style="background-image: url('img/cross.png')" class="flipped"></div>
+                        <div id="opponent-img" style="background-image: url('img/charmander.png')"></div>
+
+                        <h3 id="player-pokemon-hp">?? hp</h3>
+                        <h3 id="opponent-pokemon-hp">60 hp</h3>
+
+                    </div>
+
+                    <div id="choose-pokemon" class="choose-pokemon hidden">
+
+                        <h2>Choose Pokemon:</h2>
+
+                        <div id="choose-pokemon-0" style="background-image: url('img/cross.png')" class="flipped"></div>
+                        <div id="choose-pokemon-1" style="background-image: url('img/cross.png')"></div>
+                        <div id="choose-pokemon-2" style="background-image: url('img/cross.png')"></div>
+
+                        <div id="choose-pokemon-3" style="background-image: url('img/cross.png')" class="flipped"></div>
+                        <div id="choose-pokemon-4" style="background-image: url('img/cross.png')"></div>
+                        <div id="choose-pokemon-5" style="background-image: url('img/cross.png')"></div>
+
+                    </div>
+                </div>
+
+                <div class="report-area bordered-area">
+                    <input type="text" id="report-line" readonly value="Catch up to 6 Pokemon...">
+                    <textarea id="report-box" readonly></textarea>
+                </div>
+
+                <button id="ok-button" disabled>OK</button>
+                <button id="move-button" onClick="playerMove()" disabled>Move</button>
+                <button id="choose-button" onClick="startChoose()" disabled>Choose (0)</button>
+                
+            </div>
+        </div>
+    </body>
+</html>
