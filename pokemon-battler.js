@@ -332,14 +332,14 @@ const customNames = [];
 let gameOver = false;
 
 const opponents = [];
-opponents[0] = new Rattata('Wild Rattata', 26, 6, 'img/rattata.png');
-opponents[1] = new Squirtle('Wild Squirtle', 28, 7, 'img/squirtle.png');
-opponents[2] = new Charmander('Wild Charmander', 28, 8, 'img/charmander.png');
-opponents[3] = new NormalPokemon('Wild Eevee', 30, 9, 'img/eevee.png');
-opponents[4] = new Rattata('Rabid Rattata', 31, 10, 'img/rattata.png');
-opponents[5] = new WaterPokemon('Wild Vaporeon', 36, 12, 'img/squirtle.png');
-opponents[6] = new GrassPokemon('Wild Leafon', 40, 15, 'img/leafeon.png');
-opponents[7] = new Bulbasaur('Wild Bulbasaur', 43, 16, 'img/bulbasaur.png');
+opponents[0] = new Rattata('Wild Rattata', 26, 10, 'img/rattata.png');
+opponents[1] = new Squirtle('Wild Squirtle', 28, 10, 'img/squirtle.png');
+opponents[2] = new Charmander('Wild Charmander', 28, 12, 'img/charmander.png');
+opponents[3] = new NormalPokemon('Wild Eevee', 30, 13, 'img/eevee.png');
+opponents[4] = new Rattata('Rabid Rattata', 31, 14, 'img/rattata.png');
+opponents[5] = new WaterPokemon('Wild Vaporeon', 36, 15, 'img/vaporeon.png');
+opponents[6] = new GrassPokemon('Wild Leafon', 40, 17, 'img/leafeon.png');
+opponents[7] = new Bulbasaur('Wild Bulbasaur', 43, 19, 'img/bulbasaur.png');
 opponents[8] = new FirePokemon('Wild Flareon', 46, 20, 'img/flareon.png');
 opponents[9] = new Charmander('Boss Charmander', 55, 23, 'img/charmander.png');
 
